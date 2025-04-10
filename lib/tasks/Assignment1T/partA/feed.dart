@@ -1,5 +1,25 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
+        useMaterial3: true,
+      ),
+      home: Feed(),
+    );
+  }
+}
+
 class Feed extends StatelessWidget {
   const Feed({super.key});
 
@@ -72,7 +92,7 @@ class Feed extends StatelessWidget {
                               ),
                               DropdownMenu(
                                 inputDecorationTheme: InputDecorationTheme(),
-                                dropdownMenuEntries: [],
+                                dropdownMenuEntries: [DropdownMenuEntry(value: 1, label: 'monday')],
                                 label: Text("Today"),
                                 width: 130,
                               ),
@@ -416,7 +436,7 @@ class PostWidget extends StatelessWidget {
                     borderRadius: BorderRadius.circular(12.0),
                     child: Image.network(
                       postImageUrl,
-                      height: 120, // Adjust height as needed
+                      height: 120,
                       width: double.infinity,
                       fit: BoxFit.cover,
                     ),

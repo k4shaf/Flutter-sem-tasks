@@ -40,7 +40,8 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             Image(
               image: AssetImage('assets/images/img.png'),
-              fit: BoxFit.cover,height: 300,
+              fit: BoxFit.cover,
+              height: 300,
             ),
             Expanded(
               child: Container(
@@ -70,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             focusedBorder: UnderlineInputBorder(
                               borderSide:
-                              BorderSide(color: Colors.white, width: 2),
+                                  BorderSide(color: Colors.white, width: 2),
                             ),
                             // contentPadding: EdgeInsets.only(bottom: 4)
                           ),
@@ -92,7 +93,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             ),
                             focusedBorder: UnderlineInputBorder(
                               borderSide:
-                              BorderSide(color: Colors.white, width: 2),
+                                  BorderSide(color: Colors.white, width: 2),
                             ),
                             // contentPadding: EdgeInsets.only(bottom: 4)
                           ),
@@ -120,7 +121,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                       context,
                                       MaterialPageRoute(
                                           builder: (context) =>
-                                          const ProductsPage()));
+                                              const ProductsPage()));
                                 },
                                 style: ButtonStyle(
                                   padding: WidgetStateProperty.all(
@@ -131,7 +132,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                     ),
                                   ),
                                   backgroundColor:
-                                  WidgetStateProperty.all(Colors.white),
+                                      WidgetStateProperty.all(Colors.white),
                                 ),
                                 child: Text(
                                   "Sign In",
@@ -155,7 +156,7 @@ class _MyHomePageState extends State<MyHomePage> {
                                 TextSpan(
                                     text: "Sign Up",
                                     style:
-                                    TextStyle(fontWeight: FontWeight.bold)),
+                                        TextStyle(fontWeight: FontWeight.bold)),
                               ]),
                         ),
                       ],
@@ -176,7 +177,6 @@ class ProductsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return Scaffold(
       appBar: AppBar(
         title: Text("Plants!!"),
@@ -194,7 +194,7 @@ class ProductsPage extends StatelessWidget {
                     Text(
                       "What Kind",
                       style:
-                      TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
+                          TextStyle(fontWeight: FontWeight.bold, fontSize: 30),
                     ),
                     Text("Of Plants You Want",
                         style: TextStyle(
@@ -447,7 +447,7 @@ class ProductsPage extends StatelessWidget {
                             context,
                             MaterialPageRoute(
                                 builder: (context) =>
-                                const ProductDetailsPage()));
+                                    const ProductDetailsPage()));
                       },
                       child: Container(
                         decoration: BoxDecoration(
@@ -455,7 +455,7 @@ class ProductsPage extends StatelessWidget {
                           color: Colors.lightGreen,
                         ),
                         padding:
-                        EdgeInsets.symmetric(horizontal: 20, vertical: 10),
+                            EdgeInsets.symmetric(horizontal: 20, vertical: 10),
                         child: Column(
                           children: [
                             Row(
@@ -484,7 +484,7 @@ class ProductsPage extends StatelessWidget {
                                   alignment: Alignment.centerLeft,
                                   child: Column(
                                     crossAxisAlignment:
-                                    CrossAxisAlignment.start,
+                                        CrossAxisAlignment.start,
                                     children: [
                                       Text(
                                         "Cacti",
@@ -552,7 +552,7 @@ class ProductDetailsPage extends StatelessWidget {
                     Text(
                       "Plant",
                       style:
-                      TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+                          TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
                     ),
                     Text(
                       "Regular Price \$195.00",
@@ -574,7 +574,7 @@ class ProductDetailsPage extends StatelessWidget {
                       decoration: const ShapeDecoration(
                           shape: RoundedRectangleBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(3))),
+                                  BorderRadius.all(Radius.circular(3))),
                           color: Colors.lightGreen),
                       child: IconButton(
                           onPressed: () {},
@@ -594,7 +594,7 @@ class ProductDetailsPage extends StatelessWidget {
                       decoration: const ShapeDecoration(
                           shape: RoundedRectangleBorder(
                               borderRadius:
-                              BorderRadius.all(Radius.circular(3))),
+                                  BorderRadius.all(Radius.circular(3))),
                           color: Colors.lightGreen),
                       child: IconButton(
                           onPressed: () {},
@@ -642,7 +642,8 @@ class ProductDetailsPage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(8),
                         ),
                       ),
-                      backgroundColor: WidgetStateProperty.all(Colors.lightGreen),
+                      backgroundColor:
+                          WidgetStateProperty.all(Colors.lightGreen),
                     ),
                     child: Text(
                       "Buy Now",
